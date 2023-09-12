@@ -7,27 +7,25 @@
     <link href="./styles/output.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container mx-auto max-w-lg bg-x-1 h-screen">
+    <div class="container mx-auto max-w-lg bg-x-1 h-full relative">
+      <div class="flex flex-row-reverse bg-slate-200 opacity-50">
+        <p class="my-2 mr-2">
+          Logged in as <span class="italic underline">mock account</span>
+        </p>
+      </div>
+
       <!-- PROFILE PHOTO + MATCH MUSIC -->
-      <div class="flex bg-x-2">
-        <div class="flex flex-wrap p-1 w-2/5">
-          <img src="./images/cover_1.jpg" alt="" class="w-1/2" />
-          <img src="./images/cover_2.jpeg" alt="" class="w-1/2" />
-          <img src="./images/cover_3.jpeg" alt="" class="w-1/2" />
-          <img src="./images/cover_4.jpg" alt="" class="w-1/2" />
-        </div>
-        <div class="w-full flex flex-col justify-center">
-          <div class="ml-4 mb-4">
-            <p class="text-5xl font-bold text-x-1 drop-shadow-sm">John Doe</p>
-          </div>
-          <div class="ml-4">
-            <button
-              class="bg-x-1 rounded-xl py-1 px-3 font-medium drop-shadow-sm"
-            >
-              Match music
-            </button>
-          </div>
-        </div>
+      <div class="flex flex-row bg-x-2 items-stretch justify-between">
+        <p
+          class="text-3xl my-2 font-medium ml-4 text-center text-x-1 drop-shadow-sm"
+        >
+          John Doe
+        </p>
+        <button
+          class="bg-x-1 px-8 mr-2 my-2 drop-shadow-sm font-medium rounded-sm"
+        >
+          <span>MATCH</span>
+        </button>
       </div>
 
       <!-- TOP TRACKS THIS WEEK -->
